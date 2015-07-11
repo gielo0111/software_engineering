@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+<title>Login</title>
+</head>
+<body>
+	<div>
+		<form autocomplete="off" method="POST" onsubmit="" action="" name="login_form" id="login_form" target="_self">
+			<table cellpadding="10" cellspacing="15">
+			<tr>
+			<td><label>Username:&emsp;</label></td>
+			<td><input type="text"autocomplete="off" spellcheck="false" size="40" placeholder="username" name="login_userName" id="login_userName" required/>
+			
+			<input id="login_datetime" name="login_datetime" type="hidden"/><!--GET THE TIME THE ACCOUNT HAS LOGIN-->
+			<script type="text/javascript">
+			document.getElementById('login_datetime').value = Date();
+			</script>
+			
+			</td>
+			</tr>
+			<tr>
+			<td><label>Password:&emsp;</label></td>
+			<td><input type="password" name="login_passWord" id="login_passWord" size="40" autocomplete="off" placeholder="password" required/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="login" spellcheck="false" name="cmdLogIn" name="login_login" id="login_login"/></td>
+			</tr>
+			</table>
+		</form>
+	</div>
+	
+</body>
+</html>		
