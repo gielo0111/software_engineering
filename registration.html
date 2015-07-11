@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+<title>Login</title>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body>
+	<div>
+		<form method="POST" action="form-handler" onsubmit="return checkForm(this);" target="_self" autocomplete="off">
+			<table cellpadding="5" cellspacing="5">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" value="" size="40" placeholder="firstname" tabindex="1" maxlength="32" spellcheck="false" autocomplete="off" name="register_firstName" id="register_firstName" required/>
+				
+				<input id="register_datetime" name="register_datetime" id="register_datetime" type="hidden"/><!--GET THE TIME THE ACCOUNT WAS REGISTERED-->
+				<script type="text/javascript">
+				document.getElementById('register_datetime').value = Date();
+				</script>
+				
+				</td>
+				<td><input type="text" value="" size="40" placeholder="lastname" maxlength="32" spellcheck="false" autocomplete="off" name="register_lastName" id="register_lastName" required/></td>
+			</tr>
+			<tr>
+
+				
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" value="" placeholder="Enter Username" size="40" spellcheck="false" maxlength="32" autocomplete="off" name="register_userName" id="register_userName" required/></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" value="" size="40" placeholder="Enter Password" maxlength="32" spellcheck="false" autocomplete="off" name="register_enterPassword" id="register_enterPassword" required/></td>
+				<td><input type="password" value="" size="40" placeholder="Re-enter Password" maxlength="32" spellcheck="false" autocomplete="off" name="register_reEnterPassword" id="register_reEnterPassword" required/></td>
+			</tr>
+			<tr>
+				<td>Secret Question & Answer
+				</td>
+				<td><select id="register_secretQuestion" name="register_secretQuestion" autocomplete="off" required>
+					<option selected="selected">Select a Question</option>
+					<option value="1">What is the name of your favorite team or player?</option>
+					<option value="2">What was the street you lived on in high school?</option>
+					<option value="3">What was the name of your second pet?</option>
+					<option value="4">What was the name of your third best friend?</option>
+				</select>
+				
+				</td>
+				<td><input type="text" value="" size="40" placeholder="Answer" maxlength="32" spellcheck="false" autocomplete="off" name="register_secretAnswer" id="register_secretAnswer" required/></td>
+			</tr>
+			
+			<tr>
+			<td></td>
+			<td><input type="submit" value="Register" id="register_account" name="register_account"/></td>
+			</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>		
